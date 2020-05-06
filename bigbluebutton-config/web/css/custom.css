@@ -1,71 +1,69 @@
 :root {
   --color-primary: #00BCD5 !important;
+  --unread-messages-bg: #045f9d !important;
   --poll-blue: #045f9d !important;
   --toast-error-bg: #045f9d !important;
   --color-success: #abee07 !important;
 }
 
 body {
-	background: #053250 !important;
+  background: #053250 !important;
 }
 
-[class^="primary--"]{
-	background: #00BCD5 !important;
+[class^="primary--"] {
+  background: #00BCD5 !important;
 }
 
 .react-toggle--checked .react-toggle-track {
-   background-color: #abee07 !important;
+  background-color: #abee07 !important;
 }
 
 .react-toggle-track {
-   background-color: #045f9d!important;
+  background-color: #045f9d!important;
 }
 
-[class^="actionsbar--"]  [class^="verticalList--"] > li:last-child,
-[class^="navbar--"] [class^="verticalList--"] > li:last-child,
-[class^="navbar--"]  [class^="verticalList--"] > li:nth-child(3),
-[class^="navbar--"]  [class^="verticalList--"] > li:nth-child(4)
-{
-   display: none !important;
+[class^="actionsbar--"] [class^="verticalList--"]>li:last-child,
+[class^="navbar--"] [class^="verticalList--"]>li:nth-child(3),
+[class^="navbar--"] [class^="verticalList--"]>li:nth-child(4) {
+  display: none !important;
 }
 
 .ReactModal__Content [class^="header"] {
-    border-bottom-color: transparent;
+  border-bottom-color: transparent;
 }
 
-.ReactModal__Content > [class^="header"] > [class^="title--"] {
-    color: #00BCD5;
-    font-size: 20px;
-    font-weight: 600;
+.ReactModal__Content>[class^="header"]>[class^="title--"] {
+  color: #00BCD5;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 30px;
 }
 
 .ReactModal__Content [class^="content--"] [class^="title--"] {
-    color: #00BCD5;
-    font-weight: 600;
+  color: #00BCD5;
+  font-weight: 600;
 }
 
 .ReactModal__Content [class^="content--"] [class^="footer--"] button,
 .ReactModal__Content [class^="header--"] [class^="actions--"] button {
-    border-radius: 20px;
-    box-shadow: 0 4px 4px 0px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .ReactModal__Content [class^="content--"] [class^="footer--"] button[aria-label="Yes"],
 .ReactModal__Content [class^="header--"] [class^="actions--"] button[aria-label="Confirm"] {
-    order: 2 !important;
+  order: 2 !important;
 }
 
 .ReactModal__Content [class^="content--"] [class^="footer--"] button[aria-label="No"],
 .ReactModal__Content [class^="header--"] [class^="actions--"] button[aria-label="Close Settings"],
 .ReactModal__Content [class^="header--"] [class^="actions--"] button[aria-label="Close Presentation"] {
-    background: #e4e4e4;
-    color: var(--poll-blue);
+  background: #f5f5f5;
+  color: var(--poll-blue);
 }
 
 .ReactModal__Content [class^="content--"] [class^="footer--"] button[aria-label="Cancel"] {
-    background: #e4e4e4;
-    color: var(--poll-blue);
-    margin-right: 7px;
+  background: #f5f5f5;
+  color: var(--poll-blue);
+  margin-right: 7px;
 }
-
-
